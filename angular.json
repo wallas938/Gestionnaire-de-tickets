@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "gestion-de-tickets": {
+    "gestionnaire-de-tickets": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/gestion-de-tickets",
+            "outputPath": "dist/gestionnaire-de-tickets",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "gestion-de-tickets:build"
+            "browserTarget": "gestionnaire-de-tickets:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "gestion-de-tickets:build:production"
+              "browserTarget": "gestionnaire-de-tickets:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gestion-de-tickets:build"
+            "browserTarget": "gestionnaire-de-tickets:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "gestion-de-tickets-e2e": {
+    "gestionnaire-de-tickets-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "gestion-de-tickets:serve"
+            "devServerTarget": "gestionnaire-de-tickets:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "gestion-de-tickets:serve:production"
+              "devServerTarget": "gestionnaire-de-tickets:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "gestion-de-tickets"
+  "defaultProject": "gestionnaire-de-tickets"
 }
